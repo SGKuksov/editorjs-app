@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+
+#app {
+  width: 50%;
+  height: 100%;
+  padding-top: 50px;
+  border: 1px solid #000;
+  font-size: 20px;
+  white-space: 2px;
+  line-height: 30px;
+}
+
+#app2 {
+  overflow: scroll;
+  padding-top: 50px;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000;
+  background: #222222;
+  color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  white-space: 2px;
+  line-height: 30px;
+}
+
+#app2 .inner {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+#app2 .block-list {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+#app2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#app2 p {
+  margin: 0;
+  padding: 0;
+}
+
+#app2 b:nth-child(1) {
+  color: rgb(167, 37, 37);
+  display: block;
+  margin-left: -30px;
+}
+
+#app2 b:nth-child(2) {
+  color: rgb(240, 217, 16);
+  display: block;
+  padding-left: 60px;
+}
+
+#app2 b:nth-child(3) {
+  color: rgb(240, 217, 16);
+  display: block;
+  /* padding-left: 60px; */
+}
+
+#app2 b:nth-child(4) {
+  color: rgb(167, 37, 37);
+  display: block;
+  /* margin-left: -30px; */
+}
+
+.text-typing {
+  width: 40em;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: 'Inconsolata', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 5s steps(50, end);
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
